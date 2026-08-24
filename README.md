@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# D & S Auto Repair — Website
 
-## Getting Started
+Marketing website for **D & S Auto Repair**, 6566 College St, Beaumont, TX 77707 — (409) 466-9350.
 
-First, run the development server:
+Single-page site built with Next.js 16 (App Router), TypeScript, and Tailwind CSS v4. Fully static — no backend, database, or CMS. Deploys cleanly to Vercel.
+
+## Run locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Where the facts live
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**All business information is in `lib/site-config.ts`** — name, phone, address, hours, services, navigation, testimonials, SEO copy, and the aggregate rating shown in the hero. Change a fact there and it updates everywhere, including the JSON-LD structured data in `app/layout.tsx`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Things flagged for owner verification:
 
-## Learn More
+- **Friday hours** — public listings disagree (5 PM vs 3 PM), so the site shows "Call for hours". Fix in `lib/site-config.ts` once confirmed (search `TODO(owner)`).
+- **Rating** — shown as "4.8 average rating" with no review count on purpose; update `business.rating` if listings change.
 
-To learn more about Next.js, take a look at the following resources:
+## Replacing the placeholder photos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The images in `public/images/` are tasteful stock placeholders (Unsplash) — they do **not** depict D & S, David, or his shop. Swap them for real shop photos by replacing the files (keep the filenames, or update the paths in the components listed):
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| File | Used in | Suggested real photo |
+|---|---|---|
+| `hero-engine.jpg` | `components/Hero.tsx` | Shop exterior or signature work shot (dark/moody reads best under the overlay) |
+| `mechanic-working.jpg` | `components/WhyDS.tsx` | David at work |
+| `story-hands.jpg` | `components/Story.tsx` | Close-up of hands-on repair work |
+| `service-oil-change.jpg` | `components/Services.tsx` | Any service in progress |
+| `tool-wall.jpg` | `components/Location.tsx` | Shop interior / storefront |
 
-## Deploy on Vercel
+## Content integrity
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Testimonials in `site-config.ts` are excerpts from genuine public customer reviews — don't edit their wording or add reviews that don't exist. The site deliberately makes no claims about certifications, warranties, years in business, financing, towing, or anything else not publicly verifiable.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy
+
+```bash
+npx vercel
+```
+
+No environment variables required.
