@@ -2,7 +2,7 @@
  * Single source of truth for all business facts shown on the site.
  *
  * Everything here has been kept to verifiable, publicly listed information.
- * When the owner confirms or corrects a detail, change it here — nothing
+ * When the owner confirms or corrects a detail, change it here - nothing
  * else in the codebase hard-codes business facts.
  */
 
@@ -28,7 +28,7 @@ export const business = {
     "https://www.google.com/maps/search/?api=1&query=D%20%26%20S%20Auto%20Repair%2C%206566%20College%20St%2C%20Beaumont%2C%20TX%2077707",
   /**
    * Aggregate rating as commonly listed across public review sources.
-   * Deliberately no review count — counts drift and aggregators disagree.
+   * Deliberately no review count - counts drift and aggregators disagree.
    * Update the number here if listings change.
    */
   rating: {
@@ -40,7 +40,7 @@ export const business = {
 
 /**
  * Business hours.
- * TODO(owner): Verify Friday closing time — public listings disagree
+ * TODO(owner): Verify Friday closing time - public listings disagree
  * (some say 5:00 PM, some say 3:00 PM). Until confirmed we show
  * "Call for hours" for Friday rather than guessing.
  */
@@ -81,7 +81,7 @@ export const services: Service[] = [
   {
     title: "A/C Service",
     description:
-      "Air-conditioning diagnosis and repair — because a Texas summer without cold air isn't an option.",
+      "Air-conditioning diagnosis and repair, because a Texas summer without cold air isn't an option.",
     icon: "ac",
   },
   {
@@ -113,7 +113,7 @@ export type Testimonial = {
 
 /**
  * Excerpts from genuine public customer reviews. Do not edit wording
- * without checking the original review — these are real customers.
+ * without checking the original review - these are real customers.
  */
 export const testimonials: Testimonial[] = [
   {
@@ -144,13 +144,13 @@ export const whyPoints = [
   {
     title: "Honest Recommendations",
     description:
-      "Customers consistently say the same thing: David tells you what your vehicle actually needs — and what it doesn't.",
+      "Customers consistently say the same thing: David tells you what your vehicle actually needs, and what it doesn't.",
     icon: "handshake",
   },
   {
     title: "Fair, Reasonable Pricing",
     description:
-      "Review after review mentions repair costs that came in reasonable — sometimes lower than the customer expected.",
+      "Review after review mentions repair costs that came in reasonable, and sometimes lower than the customer expected.",
     icon: "tag",
   },
   {

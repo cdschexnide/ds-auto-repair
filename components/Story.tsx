@@ -76,7 +76,7 @@ export default function Story() {
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
               When something is wrong with your vehicle, you should be able to
               understand what needs fixing and why. That&rsquo;s how
-              D&thinsp;&amp;&thinsp;S has always worked — explain it plainly, fix
+              D&thinsp;&amp;&thinsp;S has always worked: explain it plainly, fix
               it right, charge a fair price.
             </p>
           </Reveal>

@@ -27,7 +27,7 @@ export default function Services() {
         </Reveal>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {/* Featured card — diagnostics, with imagery */}
+          {/* Featured card - diagnostics, with imagery */}
           <Reveal className="md:col-span-2 lg:col-span-1">
             <article className="group relative flex h-full min-h-[320px] flex-col justify-end overflow-hidden rounded-xl bg-ink-900">
               <Image

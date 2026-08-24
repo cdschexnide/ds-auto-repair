@@ -6,7 +6,7 @@ import Reveal from "@/components/Reveal";
 export default function Hero() {
   return (
     <section id="top" className="relative isolate flex min-h-dvh items-center overflow-hidden">
-      {/* Backdrop — swap /images/hero-engine.jpg for a real shop photo later */}
+      {/* Backdrop - swap /images/hero-engine.jpg for a real shop photo later */}
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/hero-engine.jpg"
@@ -42,7 +42,7 @@ export default function Hero() {
           <Reveal delay={160}>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
               D&thinsp;&amp;&thinsp;S Auto Repair provides dependable automotive
-              repair and maintenance for drivers in Beaumont — with straight
+              repair and maintenance for drivers in Beaumont, with straight
               answers about what your vehicle needs, and what it doesn&rsquo;t.
             </p>
           </Reveal>

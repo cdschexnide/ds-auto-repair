@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /*
-  D & S Auto Repair — design tokens.
+  D & S Auto Repair - design tokens.
 
   Charcoal/ink dark system with warm paper-toned light sections and a
   restrained amber accent. The site deliberately commits to this single
@@ -120,7 +120,7 @@ body {
   }
 }
 
-/* Keyboard focus — visible, on-brand */
+/* Keyboard focus - visible, on-brand */
 :focus-visible {
   outline: 2px solid var(--amber);
   outline-offset: 3px;

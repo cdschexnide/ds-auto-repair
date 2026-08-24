@@ -32,7 +32,7 @@ export const viewport: Viewport = {
 };
 
 /**
- * LocalBusiness structured data — only facts we actually know.
+ * LocalBusiness structured data - only facts we actually know.
  * Friday hours are intentionally omitted (unverified across listings).
  */
 const jsonLd = {

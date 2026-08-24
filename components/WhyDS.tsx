@@ -10,7 +10,7 @@ export default function WhyDS() {
         <div className="grid items-center gap-14 lg:grid-cols-[1fr_1.15fr]">
           <Reveal>
             <figure className="relative overflow-hidden rounded-xl">
-              {/* Placeholder — replace with a real photo of the shop or David at work */}
+              {/* Placeholder - replace with a real photo of the shop or David at work */}
               <Image
                 src="/images/mechanic-working.jpg"
                 alt="Mechanic leaning over an engine bay in a repair shop"
@@ -35,8 +35,8 @@ export default function WhyDS() {
                 A reputation built one repair at a time
               </h2>
               <p className="mt-4 max-w-lg text-base leading-relaxed text-white/70">
-                The best evidence for a mechanic isn&rsquo;t on a website —
-                it&rsquo;s what customers say when they leave the shop. Here&rsquo;s
+                The best evidence for a mechanic isn&rsquo;t on a website.
+                It&rsquo;s what customers say when they leave the shop. Here&rsquo;s
                 what they keep saying about David.
               </p>
             </Reveal>

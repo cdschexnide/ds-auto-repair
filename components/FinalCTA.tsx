@@ -13,7 +13,7 @@ export default function FinalCTA() {
             <span className="text-amber-bright">Give David a call.</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/70">
-            Straight answers about what your vehicle needs — before any work
+            Straight answers about what your vehicle needs, before any work
             happens. That&rsquo;s the D&thinsp;&amp;&thinsp;S way.
           </p>
         </Reveal>

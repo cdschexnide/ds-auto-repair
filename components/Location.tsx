@@ -96,7 +96,7 @@ export default function Location() {
                 ))}
               </dl>
               <p className="mt-5 text-xs leading-relaxed text-white/45">
-                Friday hours vary — give us a quick call at{" "}
+                Friday hours vary, so give us a quick call at{" "}
                 <a
                   href={business.phone.href}
                   className="font-medium text-white/70 underline decoration-white/30 underline-offset-2 hover:text-white"
